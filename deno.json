@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "lint": {
+    "files": {
+      "include": ["src/"]
+    },
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["src/"]
+    },
+    "options": {
+      "lineWidth": 120,
+      "indentWidth": 4,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  }
+}

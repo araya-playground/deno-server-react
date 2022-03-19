@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
-    "lib": ["deno.window"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns",
+      "deno.unstable",
+      "esnext"
+    ],
     "strict": true
   },
   "lint": {
     "files": {
-      "include": ["src/"]
+      "include": ["client/", "server/", "tools/"]
     },
     "rules": {
       "tags": ["recommended"]
@@ -13,7 +20,7 @@
   },
   "fmt": {
     "files": {
-      "include": ["src/"]
+      "include": ["client/", "server/", "tools/"]
     },
     "options": {
       "lineWidth": 120,

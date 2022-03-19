@@ -8,7 +8,8 @@
       "deno.unstable",
       "esnext"
     ],
-    "strict": true
+    "strict": true,
+    "jsx": "react-jsx"
   },
   "lint": {
     "files": {

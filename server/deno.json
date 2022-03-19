@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window", "deno.unstable", "esnext"],
+    "strict": true
+  },
+  "lint": {
+    "files": {
+      "include": ["src/"]
+    },
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

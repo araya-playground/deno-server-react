@@ -1,6 +1,5 @@
-import { Handler } from "https://deno.land/std@0.130.0/http/server.ts";
-import { serveFile } from "https://deno.land/std@0.130.0/http/file_server.ts";
+import { Handler, serveFile } from "../../deps.ts";
 
-export const handleNavigation: Handler = async (req, info) => {
+export const handleNavigation: Handler = (req) => {
   return serveFile(req, "./dist/index.html");
 };

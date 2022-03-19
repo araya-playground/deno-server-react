@@ -1,7 +1,4 @@
-import React, {
-  type FunctionComponent,
-} from "https://cdn.skypack.dev/react@17.0.2?dts";
-import { render } from "https://cdn.skypack.dev/react-dom@17.0.1?dts";
+import { type FunctionComponent, render } from "../deps.ts";
 
 const root = document.getElementById("root");
 

@@ -1,8 +1,4 @@
-import { serveFile } from "https://deno.land/std@0.130.0/http/file_server.ts";
-import {
-  serve,
-  type Handler,
-} from "https://deno.land/std@0.130.0/http/server.ts";
+import { type Handler, serve, serveFile } from "../deps.ts";
 import { handleNavigation } from "./routes/navigation.ts";
 
 const PORT = parseInt(Deno.env.get("PORT") || "8080", 10);

@@ -28,5 +28,9 @@
       "singleQuote": true,
       "proseWrap": "preserve"
     }
+  },
+  "tasks": {
+    "serve": "PORT=8080 deno run --allow-env --allow-net=0.0.0.0:$PORT --allow-read=. server/main.ts --config server/deno.json",
+    "build": "deno run --allow-run=deno --allow-read=. --allow-write=./dist tools/build.ts"
   }
 }
